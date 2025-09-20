@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Want You Pets - Sokak Hayvanları İçin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="switchLang('en')">🇺🇸 EN</button>
+        <button class="lang-btn" onclick="switchLang('tr')">🇹🇷 TR</button>
+    </div>
+    
+    <div class="container">
+        <!-- Poster Placeholder (senin görselini buraya koy) -->
+        <div class="poster-placeholder" id="poster">
+            🐱🐶 WE WANT YOU! 🐶🐱<br>
+            <small>Kedi & Köpek Ordusu Seni Bekliyor</small>
+        </div>
+        
+        <!-- Sloganlar -->
+        <h1 class="slogan" id="slogan-en">We Want You!</h1>
+        <h1 class="slogan tr" id="slogan-tr" style="opacity: 0;">Sana İhtiyacımız Var!</h1>
+        
+        <!-- Bağış Butonları -->
+        <div class="donate-section">
+            <button class="donate-btn" id="donate-en" onclick="donateNow('en')">
+                💕 Donate $5 Now
+            </button>
+            <button class="donate-btn tr" id="donate-tr" style="display: none;" onclick="donateNow('tr')">
+                💕 50 TL Bağış Yap
+            </button>
+        </div>
+        
+        <!-- Miyav Efekti -->
+        <div class="meow" id="meow">🐱 Miyav! Teşekkürler!</div>
+        
+        <!-- Alt Bilgi -->
+        <footer>
+            <p>WeWantYouPets | Sokak Canları İçin | <a href="#about">Hakkımızda</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
